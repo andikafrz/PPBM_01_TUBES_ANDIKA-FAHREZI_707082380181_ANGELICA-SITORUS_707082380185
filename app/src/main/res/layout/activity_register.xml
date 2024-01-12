@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background2"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AA'S SHOP"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/inkfree"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="60dp"/>
+    
+    <ImageView
+        android:id="@+id/illustration5"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/illustration5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"/>
+    
+    <LinearLayout
+        android:id="@+id/formregis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/illustration5"
+        android:layout_marginTop="20dp">
+        
+        <EditText
+            android:id="@+id/form_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/roundform2"
+            android:drawableRight="@drawable/username"
+            android:hint="Username"
+            android:padding="15dp"
+            android:textColor="@color/purple"
+            android:textColorHint="@color/purple"/>
+
+        <EditText
+            android:id="@+id/form_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/roundform2"
+            android:drawableRight="@drawable/email"
+            android:hint="Email"
+            android:padding="15dp"
+            android:textColor="@color/purple"
+            android:textColorHint="@color/purple"/>
+
+        <EditText
+            android:id="@+id/form_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/roundform2"
+            android:drawableRight="@drawable/password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:longClickable="false"
+            android:padding="15dp"
+            android:textColor="@color/purple"
+            android:textColorHint="@color/purple"/>
+
+        <EditText
+            android:id="@+id/form_confirmpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/roundform2"
+            android:drawableRight="@drawable/password"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:longClickable="false"
+            android:padding="15dp"
+            android:textColor="@color/purple"
+            android:textColorHint="@color/purple"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/agreetermcondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/formregis"
+        android:paddingStart="40sp">
+        
+        <CheckBox
+            android:id="@+id/checkboxterm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/transparent_black_hex_10"/>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agree With Term &amp; Condition"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_createaccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agreetermcondition"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/roundform3"
+        android:text="Create Account"
+        android:textColor="@color/white"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_createaccount"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?  "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/clicklinklogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:linksClickable="true"
+            android:text="Login"
+            android:textColor="@color/purple"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

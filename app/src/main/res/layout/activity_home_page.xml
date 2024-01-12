@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#f9dcc4">
+
+    <LinearLayout
+        android:id="@+id/topnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/searchbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/roundform2"
+            android:drawableLeft="@drawable/search"
+            android:hint="Find your product"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/transparent_black_hex_7"/>
+
+        <ImageView
+            android:id="@+id/click_keranjang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/basket3"
+            android:clickable="true"
+            android:padding="10dp"
+            android:contentDescription="Click me" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:src="@drawable/andika"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:verticalScrollbarPosition="left"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/image_slider"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            app:iss_auto_cycle="true"
+            app:iss_delay="1000"
+            app:iss_period="1000"
+            app:iss_text_align="CENTER"
+            tools:ignore="MissingClass" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Untuk Kamu!!!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:backgroundTint="@color/purple"
+                    android:background="@drawable/shadow"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp">
+                    <TextView
+                        android:text="Hot"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/purple"
+                    android:background="@drawable/shadow"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp">
+                    <TextView
+                        android:text="Promo"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/purple"
+                    android:background="@drawable/shadow"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp">
+                    <TextView
+                        android:text="Voucher"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/purple"
+                    android:background="@drawable/shadow"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp">
+                    <TextView
+                        android:text="Bonus"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Viral!!!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/tombol_barang"
+                            android:background="@drawable/illustration1"
+                            android:layout_width="140dp"
+                            android:layout_height="170dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:contentDescription="Barang"/>
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Barang Apa Kek Ini"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:contentDescription="ini barang 1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RP. 200.000.00"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="40dp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/tombol_barang2"
+                            android:background="@drawable/illustration2"
+                            android:shadowRadius="30"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="140dp"
+                            android:layout_height="170dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:contentDescription="Barang"/>
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="17dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Barang Apa Kek Ini"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:contentDescription="ini barang2"/>
+
+                        <TextView
+                            android:layout_marginStart="17dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RP. 200.000.00"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/tombol_barang3"
+                            android:background="@drawable/illustration3"
+                            android:shadowRadius="30"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="140dp"
+                            android:layout_height="170dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:contentDescription="Barang"/>
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Barang Apa Kek Ini"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:contentDescription="ini barang2"/>
+
+                        <TextView
+                            android:layout_marginStart="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RP. 200.000.00"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:cardCornerRadius="28dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/purple">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/purple"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/home"
+                android:clickable="true"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="Home Button"/>
+
+            <ImageView
+                android:id="@+id/keranjang"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="70dp"
+                android:background="@drawable/keranjang"
+                android:clickable="true"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="Keranjang Button"/>
+
+            <ImageView
+                android:id="@+id/notif"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="70dp"
+                android:background="@drawable/notif"
+                android:clickable="true"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="Notif Button"/>
+
+            <ImageView
+                android:id="@+id/akun"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="70dp"
+                android:background="@drawable/setting"
+                android:clickable="true"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="setting Button"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,21 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ListView
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/listview"
-        android:scrollbars="vertical"
-        android:layout_marginTop="12dp"
-        tools:listitem="@layout/list_item"
-        android:divider="@android:color/transparent"
-        android:dividerHeight="10.0sp"
-        tools:ignore="MissingConstraints" />
+        android:text="AA'S SHOP"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/inkfree"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="150dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/illustration1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Look for any needs \njust for you"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inkfree"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explore to find the one \nthat suits you"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        />
+
+    <com.ncorti.slidetoact.SlideToActView
+        android:id="@+id/nextslidepage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:elevation="10dp"
+        app:area_margin="10dp"
+        app:animation_duration="250"
+        app:outer_color="@color/purple"
+        app:inner_color="@color/white"
+        app:text="Swipe to Start"
+        app:text_size="16dp"
+        app:slider_height="75dp"
+        app:slider_locked="false"
+        app:bounce_on_start="true"/>
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/nextgettingstarted"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginStart="100dp"-->
+<!--        android:layout_marginEnd="100dp"-->
+<!--        android:paddingTop="10dp"-->
+<!--        android:paddingBottom="10dp"-->
+<!--        android:paddingStart="20dp"-->
+<!--        android:paddingEnd="20dp"-->
+<!--        android:background="@drawable/roundform1"-->
+<!--        android:drawableRight="@drawable/arrow_forward"-->
+<!--        android:text="Getting Started"-->
+<!--        android:textColor="@color/white"/>-->
+
+</LinearLayout>
